@@ -1,3 +1,18 @@
+console.log(todos);
+//add an object to todos array
+//function that will add to array of todos
+function newToDoArrayObject(text){
+todos.push({text: text,
+complete: false,
+priority: 2,
+id: todos.length + 1
+})
+}
+
+//call the function newToDoArrayObject to add new todo
+newToDoArrayObject("James needs to wash car");
+
+
 //query the input field
 const newTODO = document.querySelector('.todo-input');
 
@@ -15,8 +30,8 @@ addButton.addEventListener('click', createNewTODO)
 function createNewTODO() {
   console.log("you have clicked the add button");
   //take this new input and append it as a LI to the OL displayed
-  console.log(newTODO.value)
+  //console.log(newTODO.value)
   const newLineItem = document.createElement('li');
   newLineItem.innerText = newTODO.value;
   toDoList.appendChild(newLineItem);
-}
+};
