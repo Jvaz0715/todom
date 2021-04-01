@@ -70,6 +70,10 @@ function clearAll() {
 
 // A function that refreshes our page by calling each of the two above functions. Since printing all todos onto the DOM is based on our todos array, if we make a change to our todos array, we can simply call this function, which will make our DOM match our todos array by simply clearing the page and repopulating it according to our todos' new state.
 
+function refreshPage() {
+  printAllToDos();
+  clearAll();
+}
 
 
 /*
