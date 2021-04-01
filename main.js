@@ -101,7 +101,9 @@ addButton.addEventListener('click', function(){
 })
 
 clearAllButton.addEventListener('click', function(){
-  refreshPage();
+  inputArea.value = '';
+  clearAll();
+  
 })
 
 
