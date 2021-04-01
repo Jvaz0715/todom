@@ -76,14 +76,14 @@ function refreshPage() {
 }
 
 
-/*
-Let's wire it all together. Add an event listener for the add todo button that will:
-1. Queries the input box. We will need that node element again, so save it to a variable!
-2. Create a todo object. Its text should be the text that was in the input box (you might have to research this!), its priority should be set to 2, and its completeness should be false, as we definitely haven't completed the todo yet.
-3. Pass that object to your adding todos function to put it in our array.
-4. Pass the object as well to your adding todos function to put it on the DOM.
-5. Stretch goal: remove all text from the input box. Try adding multiple todos without this first, you'll see why we should do it!
-*/
+
+//Let's wire it all together. Add an event listener for the add todo button that will:
+//1. Queries the input box. We will need that node element again, so save it to a variable
+//2. Create a todo object. Its text should be the text that was in the input box (you might have to research this!), its priority should be set to 2, and its completeness should be false, as we definitely haven't completed the todo yet.
+//3. Pass that object to your adding todos function to put it in our array.
+//4. Pass the object as well to your adding todos function to put it on the DOM.
+//5. Stretch goal: remove all text from the input box. Try adding multiple todos without this first, you'll see why we should do it!
+
 
 
 
