@@ -51,16 +51,22 @@ if(todo.complete === true) {
 
 
 // A function that print ALL todos. It should loop through our todos array and call the above print-one-todo function on each one.
-
-
+function printAllToDos() {
+  for (const todo of todos) {
+    printTodo(todo);
+  }
+}
 
 // Now here in the global code, call the above function, so our todos array gets printed out on page load (which is when global code is run). This is the only time we're calling a function ourselves; the rest is event listeners and helper functions that run when the user interacts with the DOM!
-
+printAllToDos();
 
 // A function that clears all todos from the DOM. This is a great helper function for refreshing our todos.
 // Test it in the console and see if your list disappears!
 
-
+function clearAll() {
+  const todoList = document.querySelector(".todo-list");
+  todoList.innerHTML = "";
+}
 
 // A function that refreshes our page by calling each of the two above functions. Since printing all todos onto the DOM is based on our todos array, if we make a change to our todos array, we can simply call this function, which will make our DOM match our todos array by simply clearing the page and repopulating it according to our todos' new state.
 
