@@ -1,16 +1,20 @@
-console.log(todos);
+
 //add an object to todos array
 //function that will add to array of todos
 function newToDoArrayObject(text){
-todos.push({text: text,
+  todos.push({text: text,
 complete: false,
 priority: 2,
 id: todos.length + 1
 })
 }
+/*newToDoArrayObject("james needs to wash car");
+console.log(todos[0].text)
+console.log(todos[todos.length -1].text)*/
+
+
 
 //call the function newToDoArrayObject to add new todo
-newToDoArrayObject("James needs to wash car");
 
 
 //query the input field
