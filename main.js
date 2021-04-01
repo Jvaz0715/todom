@@ -86,7 +86,7 @@ function refreshPage() {
 
 const addButton = document.querySelector(".add-todo");
 const inputArea = document.querySelector(".todo-input");
-
+const clearAllButton = document.querySelector(".clearAll-todo");
 
 addButton.addEventListener('click', function(){
   //console.log('You clicked the add button')
@@ -98,6 +98,10 @@ addButton.addEventListener('click', function(){
   });
   refreshPage();
   printAllToDos();
+})
+
+clearAllButton.addEventListener('click', function(){
+  refreshPage();
 })
 
 
