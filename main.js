@@ -84,6 +84,21 @@ function refreshPage() {
 //4. Pass the object as well to your adding todos function to put it on the DOM.
 //5. Stretch goal: remove all text from the input box. Try adding multiple todos without this first, you'll see why we should do it!
 
+const addButton = document.querySelector(".add-todo");
+const inputArea = document.querySelector(".todo-input");
+
+
+addButton.addEventListener('click', function(){
+  //console.log('You clicked the add button')
+  console.log(inputArea.value);
+  newToDoArrayObject({text: inputArea.value,
+    complete: false,
+    priority: 2,
+    id: todos.length + 1
+  });
+  refreshPage();
+  printAllToDos();
+})
 
 
 
