@@ -93,7 +93,7 @@ const clearAllButton = document.querySelector(".clearAll-todo");
 
 addButton.addEventListener('click', function(){
   //console.log('You clicked the add button')
-  console.log(inputArea.value);
+  //console.log(inputArea.value);
   newToDoArrayObject({text: inputArea.value,
     complete: false,
     priority: 2,
@@ -101,12 +101,15 @@ addButton.addEventListener('click', function(){
   });
   refreshPage();
   printAllToDos();
+
+  if (inputArea.value === "") {
+    alert("You did not input a todo. Please enter a todo");
+  }
 })
 
+
 clearAllButton.addEventListener('click', function(){
-  
   clearAll();
-  
 })
 
 
